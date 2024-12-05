@@ -1,0 +1,16 @@
+The corrected CSS code addresses the unit inconsistency issue within the `calc()` function:
+
+```css
+.container {
+  width: 500px;
+}
+
+.element {
+  width: calc(100% - 20px);
+  /* Correct usage of calc(): All units are consistent */
+  height: calc(50% - 10px);
+  /* Another incorrect usage */
+}
+```
+
+The `bugSolution.css` file demonstrates how to correctly use `calc()` by either ensuring consistent units throughout the calculation or converting percentage values into pixel values before the subtraction operation.
