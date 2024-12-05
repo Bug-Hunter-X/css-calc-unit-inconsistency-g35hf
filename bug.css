@@ -1,0 +1,12 @@
+The following CSS code snippet demonstrates an issue where the `calc()` function is used incorrectly, leading to unexpected behavior:
+
+```css
+.element {
+  width: calc(100% - 20px);
+  /* Incorrect usage of calc() */
+  height: calc(50% - 10px);
+  /* Another incorrect usage */
+}
+```
+
+The problem lies in the improper subtraction of pixels from percentages.  `calc()` requires consistent units. Subtracting pixels directly from a percentage value is not valid, resulting in incorrect calculations and potentially unexpected layout issues.
